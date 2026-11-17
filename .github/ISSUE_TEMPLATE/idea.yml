@@ -1,0 +1,14 @@
+name: Idea o mejora / Feature idea
+description: Algo que haría más útil la herramienta.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: ¿Qué problema resuelve? / What problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Propuesta / Proposal

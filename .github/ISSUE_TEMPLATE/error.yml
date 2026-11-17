@@ -1,0 +1,26 @@
+name: Reporte de error / Bug report
+description: Algo no funciona como debería.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No pegues datos reales: ni RFC, ni facturas, ni placas, ni montos de una persona. Usa datos inventados que reproduzcan el problema.
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducirlo / Steps to reproduce
+      placeholder: "1. Abro ...\n2. Capturo ...\n3. Veo ..."
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Qué esperabas y qué pasó / Expected vs actual
+    validations:
+      required: true
+  - type: input
+    id: entorno
+    attributes:
+      label: Entorno / Environment
+      description: Navegador y sistema, o versión de Python/Node y del paquete.

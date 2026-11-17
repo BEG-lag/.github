@@ -1,0 +1,34 @@
+name: Corrección legal o de datos / Legal or data correction
+description: Un artículo, una regla, un valor oficial o un dato que está mal o desactualizado.
+title: "Corrección: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias. Las correcciones con fuente oficial son lo más valioso que puedes aportar. No incluyas datos personales.
+  - type: input
+    id: que
+    attributes:
+      label: ¿Qué está mal? / What is wrong?
+      description: Artículo, regla, valor o pantalla. Ej. "art. 162 LFT, tope de la prima de antigüedad".
+    validations:
+      required: true
+  - type: textarea
+    id: correcto
+    attributes:
+      label: ¿Qué debería decir? / What should it say?
+    validations:
+      required: true
+  - type: input
+    id: fuente
+    attributes:
+      label: Fuente oficial y fecha / Official source and date
+      description: Liga al DOF, Cámara de Diputados, SAT, INEGI, Gaceta Oficial o resolución, con su fecha de publicación.
+    validations:
+      required: true
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas / Notes
+      description: Criterios judiciales, interpretaciones o contexto.
